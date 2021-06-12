@@ -1,0 +1,33 @@
+body
+{
+    background-color: #fef4ea;
+}
+
+.nav-link:hover
+{
+    color: red;
+}
+
+
+
+.navbar-nav
+{
+    color: darkkhaki;
+    flex-direction: row;
+    background-color: oldlace;
+}
+
+.btn-outline-success {
+    color: white;
+    background-color: #ff7670;
+    border-color: #fffbf9;
+    border-width: 4px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-outline-success:hover {
+    color: #ff7670;
+    background-color: #fffbf9;
+    border-color: #ff7670;
+}
