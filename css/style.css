@@ -3,18 +3,15 @@ body
     background-color: #fef4ea;
 }
 
-.nav-link:hover
-{
-    color: red;
-}
-
-
-
 .navbar-nav
 {
     color: darkkhaki;
-    flex-direction: row;
+    /* flex-direction: row; */
     background-color: oldlace;
+    position: relative;
+    left: 22%;
+    /* width: fit-content; */
+    /* text-align: center; */
 }
 
 .btn-outline-success {
@@ -23,11 +20,149 @@ body
     border-color: #fffbf9;
     border-width: 4px;
     border-radius: 8px;
-    font-weight: 500;
+    font-weigh: 500;
+    margin-right: 5%;
 }
 
 .btn-outline-success:hover {
     color: #ff7670;
     background-color: #fffbf9;
     border-color: #ff7670;
+    margin-right: 5%;
+}
+
+
+
+.btn-outline-success:visited {
+    color: #ff7670;
+    background: #fffbf9;
+    border-color: #ff7670;
+    margin-right: 5%;
+}
+
+.nav-item
+{
+    margin: auto 1.5rem auto 1.5rem;
+    font-weight: 700;
+}
+
+.navbar-brand
+{
+    margin-left: 1rem;  
+}
+
+.navbar-brand:hover
+{
+    margin-left: 1rem;;
+}
+
+.logo
+{
+    margin-left: 1rem
+}
+
+.navbar-light .navbar-nav .nav-link.active
+{
+    color: #ff7670;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover
+{
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link
+{
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover
+{
+    color: #ff7670;
+}
+
+
+.title
+{
+    margin-left: 15%;
+    margin-top: 30%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.para
+{
+    margin-left: 15%;
+    margin-top: 5%;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-weight: 500;
+    text-align: justify;
+    color: #8b828c;
+}
+
+.title
+{
+    color: #7e01fc;
+}
+
+.title:before
+{
+    color: black;
+    content: "Love is a ";
+}
+
+.title span
+{
+    color: #41ba7f;
+}
+
+
+.btn-primary
+{
+    margin-top: 25%;
+    margin-bottom: 5%;
+}
+
+
+.details
+{
+    margin-left: 40%;
+    font-family: 'Rubik', sans-serif;
+    /* margin-top: 25%; */
+    /* color: green; */
+    font-weight: 500;
+}
+
+.image
+{
+    margin-top: 36%;
+    /* border-top-left-radius: 500px; */
+    /* border-top-right-radius: 500px; */
+    /* border-radius: 500px; */
+    /* width: 500px; */
+    /* height: 500px; */
+    width: 290px;
+    height: 290px;
+}
+
+.desc
+{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+
+
+.img-container_1
+{
+    background-color:#b384f1;
+    width: 480px;
+    height: 460px;
+    /* border-top-left-radius: 50%; */
+    /* border-top-right-radius: 50%; */
+    /* border-bottom-left-radius: 45%; */
+    /* border-bottom-right-radius: 45%; */
+    margin-top: 10%;
+    border-radius: 50%;
 }
