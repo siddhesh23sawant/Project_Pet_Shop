@@ -197,3 +197,18 @@ align-items: center;
     background-color: #fff;
     font-weight: 600;
 }
+
+
+#fav-section
+{
+    background-color: crimson;
+    padding: 7% 15%;
+    text-align: center;
+    color: #fff;
+}
+
+.size_planner
+{
+    height: 450px;
+    border-radius: 100px;
+}
