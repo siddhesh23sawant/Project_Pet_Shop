@@ -212,3 +212,12 @@ align-items: center;
     height: 450px;
     border-radius: 100px;
 }
+
+.carousel_heading
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0% 10% 5%;
+}
