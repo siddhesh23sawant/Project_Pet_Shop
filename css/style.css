@@ -15,7 +15,7 @@ body
     /* align-items: center; */
 }
 
-.btn-outline-success {
+.btn-outline-success{
     color: white;
     background-color: #ff7670;
     border-color: #fffbf9;
@@ -24,6 +24,9 @@ body
     font-weight: 500;
     margin-right: 5%;
 }
+
+
+
 
 .btn-outline-success:hover {
     color: #ff7670;
@@ -225,14 +228,47 @@ align-items: center;
 
 .dropdown-menu
 {
-    width: 150%;
+    width: 190%;
     /* content: normal; */
-    padding: 2%;
+    padding: 5.5%;
     font-size: 1rem;
     font-family: 'Rubik', sans-serif;
+    height: 5rem;
+    text-align: center;
+    border-radius: 8px;
+    word-spacing: 1rem;
 }
 
 .img-icon
 {
     width: 2rem;
+}
+
+.Search-btn
+{
+    border-radius: 20px;
+    margin: 0;
+    padding: 0.5rem;
+    width: 120px;
+}
+
+.container
+{
+    text-decoration: center;
+}
+
+.text-box
+{
+    border: none;
+}
+
+.vertical-line
+{
+    width: 1px;
+    background-color: silver;
+    height: 100%;
+    float: right;
+    border: 2px ridge silver ;
+    border-radius: 2px;
+    height: 35px;
 }
