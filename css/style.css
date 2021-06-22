@@ -92,7 +92,7 @@ body
 .title
 {
     margin-left: 15%;
-    margin-top: 30%;
+    margin-top: 1%;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-size: 3rem;
@@ -272,3 +272,14 @@ align-items: center;
     border-radius: 2px;
     height: 35px;
 }
+
+#main-page
+{
+    height: 40rem;
+}
+
+/* .btn-group
+{
+    padding: 0 3rem;
+    margin: 1%;
+} */
