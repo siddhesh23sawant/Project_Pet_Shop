@@ -283,3 +283,35 @@ align-items: center;
     padding: 0 3rem;
     margin: 5% 1% 0% 0%;
 }
+
+#offcanvasRightLabel
+{
+    margin: 2% 20%;
+    color:#ff7670;
+}
+
+.cart
+{
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-weight:100;
+    margin-top: 10%;
+}
+
+.cart-content
+{
+    font-size: 1rem;
+}
+
+.embed-cart
+{
+    text-align: right;
+    margin-top: 10%;
+}
+    
+.final-amount
+{
+    color: red;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
