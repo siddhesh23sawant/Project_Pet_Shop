@@ -1,6 +1,7 @@
 body
 {
     background-color: #fef4ea;
+    width: 99%;
 }
 
 .navbar-nav
@@ -178,6 +179,26 @@ body
 .row
 {
 align-items: center;
+}
+
+.btn-outline-get-started {
+    color: white;
+    background-color: #ff7670;
+    border-color: #fffbf9;
+    border-width: 4px;
+    border-radius: 8px;
+    font-weight: 500;
+    margin-right: 5%;
+}
+
+.btn-outline-get-started:hover {
+    color: #ff7670;
+    background-color: #fffbf9;
+    border-color: #ff7670;
+    border-width: 4px;
+    border-radius: 8px;
+    font-weight: 500;
+    margin-right: 5%;
 }
 
 .btn-outline-primary
