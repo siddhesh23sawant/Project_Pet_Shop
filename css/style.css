@@ -171,6 +171,7 @@ body
     /* border-bottom-left-radius: 45%; */
     /* border-bottom-right-radius: 45%; */
     margin-top: 10%;
+    margin-top: 10%;
     border-radius: 50%;
 }
 
@@ -207,8 +208,8 @@ align-items: center;
     background-color: crimson;
     padding: 5% 7% 15%;
     text-align: center;
-    color: #fff;
-    margin-top: 10%;
+color: white;
+margin-top: 10%;
 }
 
 .size_planner
