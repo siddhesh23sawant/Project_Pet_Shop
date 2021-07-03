@@ -16,7 +16,7 @@ body
     /* align-items: center; */
 }
 
-.btn-outline-success{
+.btn-outline{
     color: white;
     background-color: #ff7670;
     border-color: #fffbf9;
@@ -26,21 +26,9 @@ body
     margin-right: 5%;
 }
 
-
-
-
-.btn-outline-success:hover {
+.btn-outline:hover {
     color: #ff7670;
     background-color: #fffbf9;
-    border-color: #ff7670;
-    margin-right: 5%;
-}
-
-
-
-.btn-outline-success:visited {
-    color: #ff7670;
-    background: #fffbf9;
     border-color: #ff7670;
     margin-right: 5%;
 }
@@ -323,6 +311,7 @@ margin-top: 10%;
 .cart-content
 {
     font-size: 1rem;
+    border: none;
 }
 
 .embed-cart
