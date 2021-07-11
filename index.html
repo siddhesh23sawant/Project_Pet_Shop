@@ -5,72 +5,325 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3b1eb531dc.js" crossorigin="anonymous"></script>
 </head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 <body>
+    <!-- <h1>SidStudio</h1> -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <img class="logo" src="assets/paw.svg" alt="" width="30" height="30">
+          <a class="navbar-brand color" href="#">Pettify</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Catalogue</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Your Cart</a>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <!-- <i class="fas fa-shopping-basket" ></i> -->
+                      <img src="/assets/cart.png" alt="" style="width : 3.5rem";>
+                      <h5 id="offcanvasRightLabel">
+                      Your Basket
+                      </h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body cart">
+                      <!-- <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br> -->
+                      <div class="row cart-heading">
+                        <div class="col">
+                          <p>Description</p>
+                        </div>
+                        <div class="col">
+                          <p>Quantity</p>
+                        </div>
+                        <div class="col">
+                          <p>Amount</p>
+                        </div>
+                        <hr>
+                      </div>
 
-    <h1>SidStudio</h1>
-    <ul>
-        <li>
-            <a href="#">Catelogue</a>
-        </li>
-        <li>
-            <a href="#">Your Cart</a>
-        </li>
-        <li>
-            <a href="#">Favourites</a>
-        </li>
-        <li>
-            <a href="#">Your Orders</a>
-        </li>
-        <button>Get Started</button>
+                      <div class="row">
+                        <div class="col">
+                          <p class="cart-content">Labrador</p>
+                        </div>
+                        <div class="col">
+                          <p class="cart-content">1</p>
+                        </div>
+                        <div class="col">
+                          <p class="cart-content"><i class="fas fa-rupee-sign"></i>&ensp;10,000</p>
+                        </div>
+                        <hr>
+                      </div>
+                      
+                      <!-- <br> -->
+                      <!-- <br> -->
+                      <!-- <br> -->
+                      <!-- <br> -->
+                      <!-- <br> -->
+                      <!-- <br> -->
+                      <div class="embed-cart">
+                      <div class="row">
+                        <div class="col">
+                          <p class="cart-content">Shipment And Taxes : </p>
+                        </div>
+                        <div class="col">
+                          <p class="cart-content"><i class="fas fa-rupee-sign"></i>&ensp;120</p>
+                        </div>
+                        <!-- <hr> -->
+                      </div>
+
+                      <div class="row">
+                        <div class="col">
+                          <p class="cart-content">Total Amount : </p>
+                        </div>
+                        <div class="col">
+                          <p class="cart-content"><i class="fas fa-rupee-sign"></i>&ensp;12,120</p>
+                        </div>
+                        <!-- <  hr> -->
+                      </div>
+                      
+                      <div class="row">
+                        <div class="col">
+                          <p class="cart-content">Discount : </p>
+                        </div>
+                        <div class="col">
+                          <p class="cart-content"><i class="fas fa-rupee-sign"></i>&ensp;120</p>
+                        </div>
+                        <!-- <hr> -->
+                      </div>
+                      
+                      <div class="row">
+                        <div class="col">
+                          <p>Payable Amount : </p>
+                        </div>
+                        <div class="col">
+                          <p><i class="fas fa-rupee-sign"></i>&ensp;12,000</p>
+                        </div>
+                        <hr>
+                      </div>
+
+                      
+                      <div class="row final-amount">
+                        <div class="col">
+                          <p>Total : </p>
+                        </div>
+                        <div class="col">
+                          <p><i class="fas fa-rupee-sign"></i>&ensp;12000</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-warning">Proceed to Checkout</button>
+                      
+
+
+                    </div>
+                  </div>
+                </li>
+              
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#fav-section">Favourites</a>
+              </li>
+
+              
+              <li class="nav-item">
+                <a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Your Orders</a>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <img src="/assets/cart.png" alt="">
+                      <h1 class="basket">Your Basket</h1>
+                      <!-- <h5>Your Basket Offcanvas right</h5> -->
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div class="row">
+                        <div class="col">
+                          <p>Description</p>
+                        </div>
+                        <div class="col">
+                          <p>Quantity</p>
+                        </div>
+                        <div class="col">
+                          <p>Amount</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </li>
+            
+
+            </ul>
+              <button class="btn btn-outline" href="product.html">Get Started</button>
+            
+          </div>
+        </div>      
+      </nav>
+      
+      
+      <div id="main-page">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <h1 class="title">
+            <br> <span>four-legged</span><br>world.
+          </h1>
+          <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia sapiente nobis.</p>
+
+          
+<div class="btn-group" role="group" aria-label="Basic outlined example">
+  <!-- <button type="button" class="btn btn-outline-primary" >Dogs</button> -->
+  
+  <button type="button" class="btn btn-outline-primary" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Dogs</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+  <div class="container">
+    <div class="row row-cols-auto">
+      <div class="col">
+        <div class="vertical-line"></div>
+        
+        <img class="img-icon" src="assets/breed.png" alt="">
+        <!-- <a href="#">Breed</a> -->
+        <input class="text-box" type="text" size="5" placeholder="Breed">
+      </div>
+      <div class="col">
+        <div class="vertical-line"></div>
+        <img class="img-icon" src="assets/age.png" alt="">
+        <input class="text-box" type="text" size="2" placeholder="Age">
+        <!-- <a href="#">Age</a> -->
+      </div>
+      <div class="col">
+        <img class="img-icon" src="assets/placeholder.png" alt="">
+        <input class="text-box" type="text" size="10" placeholder="Location">
+        <!-- <a href="#">Location</a> -->
+        <div class="vertical-line"></div>
+      </div>
+      <div class="col">
+        <!-- <a href="#">Search</a> -->
+        <button type="button" class="btn btn-primary Search-btn">Search</button>
+        <!-- <div class="vertical-line"></div> -->
+      </div>
+    </div>
+  </div>
+  </ul>
+  
+          
+  
+
+  <!-- <button type="button" class="btn btn-outline-primary">Cats</button> -->
+
+  <button type="button" class="btn btn-outline-primary" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Cats</button>
+  
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <div class="container">
+      <div class="row row-cols-auto">
+        <div class="col">
+          <div class="vertical-line"></div>
+          
+          <img class="img-icon" src="assets/breed.png" alt="">
+          <!-- <a href="#">Breed</a> -->
+          <input class="text-box" type="text" size="5" placeholder="Breed">
+        </div>
+        <div class="col">
+          <div class="vertical-line"></div>
+          <img class="img-icon" src="assets/age.png" alt="">
+          <input class="text-box" type="text" size="2" placeholder="Age">
+          <!-- <a href="#">Age</a> -->
+        </div>
+        <div class="col">
+          <img class="img-icon" src="assets/placeholder.png" alt="">
+          <input class="text-box" type="text" size="10" placeholder="Location">
+          <!-- <a href="#">Location</a> -->
+          <div class="vertical-line"></div>
+        </div>
+        <div class="col">
+          <!-- <a href="#">Search</a> -->
+          <button type="button" class="btn btn-primary Search-btn">Search</button>
+          <!-- <div class="vertical-line"></div> -->
+        </div>
+      </div>
+    </div>
     </ul>
-    <h1>Love is a <br>four-legged <br> world.</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia sapiente nobis sequi perferendis reprehenderit libero aut mollitia!</p>
-<img src="assets/dog_Cat.png" alt="">
+  
+  <button type="button" class="btn btn-outline-primary">Other Pets</button>
+</div>
+        
+        
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="img-container_1">
+          <img class="image" src="assets/dog.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <a class="btn btn-primary details" href="#" role="button">More Details</a></button>
+        <div class="details">
+          <h1 class="home">355</h1>
+          <p class="desc">Waiting For Home</p>
+          <h1 class="adopted">245</h1>
+          <p class="desc">adopted last year</p>
+          <h1 class="vaccinated">456</h1>
+          <p class="desc">vaccinated</p>
+          </div>
+      </div>
+      </div>
+      
 
-<ul>
-    <li>
-        <a href="#">Dogs</a>
-        <li>
-            <img src="assets/breed.png" alt="">
-            <a href="#">Breed</a>
-            <img src="assets/age.png" alt="">
-            <a href="#">Age</a>
-            <img src="assets/placeholder.png" alt="">
-            <a href="#">Location</a>
-            <button>Search</button>
-        </li>
-    </li>
-    <li>
-        <a href="#">Cats</a>
-        <li>
-            <img src="assets/breed.png" alt="">
-            <a href="#">Breed</a>
-            <img src="assets/age.png" alt="">
-            <a href="#">Age</a>
-            <img src="assets/placeholder.png" alt="">
-            <a href="#">Location</a>
-            <button>Search</button>
-        </li>
-    </li>
-    <li>
-        <a href="#">Other Pets</a>
-    <li>
-        <img src="assets/breed.png" alt="">
-        <a href="#">Breed</a>
-        <img src="assets/age.png" alt="">
-        <a href="#">Age</a>
-        <img src="assets/placeholder.png" alt="">
-        <a href="#">Location</a>
-        <button>Search</button>
-    </li>
-</ul>
-<button>More Details</button>
-<h1>355</h1>
-<p>Waiting For Home</p>
-<h1>245</h1>
-<p>adopted last year</p>
-<h1>456</h1>
-<p>vaccinated</p>
+
+</div>
+
+<section id="fav-section">
+  
+  <div id="carouselExampleFade" data-ride="true" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h3 class="carousel_heading">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+        <img src="assets/cat_1.jpg" class="d-block w-100 size_planner" alt="...">
+        <p>Here is the mostly liked puppy</p>
+      </div>
+      <div class="carousel-item">
+        <h3 class="carousel_heading">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+        <img src="assets/kitty_1.jpg" class="d-block w-100 size_planner" alt="...">
+        <p>Here is highly trained labrador</p>
+      </div>
+      <div class="carousel-item">
+        <h3 class="carousel_heading">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+        <img src="assets/labrador-puppies.jpg" class="d-block w-100 size_planner" alt="...">
+        <p>Here is the most liked Kittie</p>
+      </div>
+      <div class="carousel-item">
+        <h3 class="carousel_heading">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+        <img src="assets/rage_cat.jpg" class="d-block w-100 size_planner" alt="...">
+        <p>Here is the most liked Kittie</p>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+<Script src="index.js"></Script>
 </body>
 </html>
