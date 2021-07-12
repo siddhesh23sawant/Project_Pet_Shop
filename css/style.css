@@ -102,17 +102,21 @@ body
     color: #7e01fc;
 }
 
-.title:before
+/* .title:before
 {
     color: black;
     content: "Love is a ";
+} */
+
+.title .title_text
+{
+    color: black;
 }
 
 .title span
 {
     color: #41ba7f;
 }
-
 
 .btn-primary
 {
